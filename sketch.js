@@ -88,29 +88,7 @@ function draw(){
 
 function spawnDoors() {
   
-  if (frameCount % 240 === 0) {
-    var door = createSprite(200, -50);
-    var climber = createSprite(200,10);
-    var invisibleBlock = createSprite(200,15);
-
-
-
-    invisibleBlock.width = climber.width;
-    invisibleBlock.height = 2;
-    
-    door.x = Math.round(random(120,400));
-    climber.x = door.x;
-    invisibleBlock.x = door.x;
-    
-    door.addImage(doorImg);
-    climber.addImage(climberImg);
-    
-    door.velocityY = 1;
-    climber.velocityY = 1;
-    invisibleBlock.velocityY = 1;
-    
-    ghost.depth = door.depth;
-    ghost.depth +=1;
+  // adicionar as estruturas aqui
    
    
     door.lifetime = 800;
